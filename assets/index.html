@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur.</p>
+    <button onclick="change()">change content</button>
+    <br><br>
+    <hr>
+
+    <p id="demo1">Change the font size of this content on button click</p>
+    <button onclick="fontsize()">click for change font size</button>
+
+    <br><br><hr>
+    <p id="demo2">content hide and show using JavaScript function</p>
+    <button onclick="hide()">click for hide</button>
+    <button onclick="show()">click for show</button>
+
+    <br><br><hr>
+    <button onclick="lighton()">light ON</button>
+    <img src="pic_bulbon.gif" id="demo3">
+    <button onclick="lightoff()">light OFF</button>
+
+
+    <script>
+        function change(){
+            document.getElementById('demo').innerHTML="Welcome to JavaScript"
+        }
+
+        function fontsize(){
+            document.getElementById('demo1').style.fontSize='50px'
+        }
+
+        function hide(){
+            document.getElementById('demo2').style.display='none'
+        }
+        function show(){
+            document.getElementById('demo2').style.display='block'
+        }
+
+        function lightoff(){
+            document.getElementById('demo3').src='pic_bulboff.gif'
+        }
+
+        function lighton(){
+            document.getElementById('demo3').src='pic_bulbon.gif'
+        }
+    </script>
+
+</body>
+</html>
